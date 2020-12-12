@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math/rand"
 	"time"
 )
@@ -14,6 +15,7 @@ func GenerateSlice(size int) []int {
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < size; i++ {
 		slice[i] = rand.Intn(999) - rand.Intn(999)
+		fmt.Println(slice[i])
 	}
 	return slice
 }

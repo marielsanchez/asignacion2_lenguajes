@@ -6,8 +6,8 @@ import "fmt"
 
 func main() {
 
-	slice := generateSlice(20)
+	slice := GenerateSlice(20)
 	fmt.Println("\n--- Unsorted --- \n\n", slice)
 	insertionsort(slice)
-	fmt.Println("\n--- Sorted ---\n\n", slice, "\n")
+	fmt.Println("\n--- Sorted ---\n\n", slice)
 }
